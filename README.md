@@ -35,14 +35,14 @@
 ├── src/
 │   ├── assets/
 │   │   └── images/      # Onde as FOTOS do relacionamento são armazenadas
-│   ├── components/
+│   ├── Components/
 │   │   ├── TimeCounter/
 │   │   ├── PhotoGallery/
 │   │   └── LoveMessage/
 │   ├── App.css          # Estilos específicos do componente principal
 │   ├── App.jsx          # Componente principal que junta todas as partes
 │   ├── main.jsx         # Ponto de entrada (onde o React é renderizado no DOM)
-│   └── Reset.css        # Estilos globais ou de reset
+│   └── reset.css        # Estilos globais ou de reset
 └── package.json
 └── README.md
 
