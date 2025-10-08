@@ -1,0 +1,104 @@
+@import url(../../App.css);
+
+.photo-gallery{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     min-height: 100vh;
+}
+
+.photo-gallery-title{
+     font-family: var(--fonte-secundaria);
+     padding: 1em 0em;
+     font-size: 1.3rem;
+}
+
+.photos-grid{
+     width: 300px;
+     height: 500px;
+     margin: 0 auto;
+     overflow: hidden;
+}
+
+.carousel{
+     width: 320px;
+     height: 520px;
+     max-width: 90vw;
+     max-height: 80vh;
+
+     margin: 0 auto;
+     border-radius: 10px;
+     overflow: hiddem;
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.carousel .slide{
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: var(--cor-principal-text);
+}
+
+.carousel-item{
+     height: 100%;
+}
+
+.carousel-image{
+     width: 100%;
+     height: 100%;
+}
+
+.carousel .legend{
+     background: rgba(38, 70, 83, 0.75);
+     color: var(--cor-destaque);
+     padding: 10px;
+     margin: 0;
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     text-align: center;
+     font-size: 1rem;
+}
+
+.carousel .control-dots {
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  text-align: center;
+}
+
+.carousel .control-dots .dot {
+  background: var(--color-secondary); /* Cor dos dots inativos */
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+.carousel .control-dots .dot.selected {
+  background: var(--color-primary); /* Cor do dot ativo */
+  opacity: 1;
+}
+
+/* Estilo para as setas de navegação */
+.carousel .control-arrow {
+  background: rgba(var(--color-text-dark), 0.5); /* Fundo das setas */
+  height: 100%; /* Ocupa a altura total do carrossel */
+  top: 0; /* Alinha no topo */
+  transition: background-color 0.3s ease;
+}
+
+.carousel .control-arrow:hover {
+  background: rgba(var(--color-text-dark), 0.8);
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    border-top: 8px solid var(--color-background); /* Cor da seta */
+    border-bottom: 8px solid var(--color-background); /* Cor da seta */
+}
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid var(--color-background);
+}
+.carousel .control-prev.control-arrow:before {
+    border-right: 8px solid var(--color-background);
+}

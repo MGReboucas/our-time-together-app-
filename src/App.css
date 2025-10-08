@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+     --cor-destaque: #E76F51;
+     --cor-destaque-secundaria: #F4A261;
+     --cor-fundo: #FEF5EE;
+     --cor-principal-text: #264653;
+     --cor-fundo-sec: #E9C46A;
+
+     --fonte-principal: "Roboto", sans-serif;
+     --fonte-secundaria: "Lora", serif;
+}
+
+*{
+     background-color: var(--cor-principal-text);
+}
