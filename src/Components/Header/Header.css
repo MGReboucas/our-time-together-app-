@@ -1,0 +1,55 @@
+@import url(../../App.css);
+
+.header-app{
+     background-color: var(--cor-principal-text);
+
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+
+     gap: .5em;
+     padding: 2em 1em 0em 1em;
+}
+
+.header-title{
+     font-family: var(--fonte-principal);
+     color: var(--cor-primary);
+     font-size: 2.5rem;
+     font-weight: 700;
+}
+
+.header-subtitle{
+     font-family: var(--fonte-principal);
+     color: var(--cor-secundary);
+     font-size: 1.38rem;
+     font-weight: 600;
+     margin-bottom: 1em;
+}
+
+.header-message0{
+     font-family: var(--fonte-principal);
+     color: var(--cor-primary);
+     font-size: 1.8rem;
+     font-weight: 600;
+}
+
+.header-message1{
+     font-family: var(--fonte-principal);
+     color: var(--cor-primary);
+     font-size: 1rem;
+     font-weight: 500;
+}
+
+
+.header-diviser{
+     width: 100%;
+}
+
+@media screen and (min-width: 768px){
+     .header-app{
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+     }
+}
