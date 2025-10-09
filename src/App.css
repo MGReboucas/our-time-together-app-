@@ -10,3 +10,15 @@
      --fonte-principal: "Roboto", sans-serif;
      --fonte-secundaria: "Lora", serif;
 }
+
+body{
+     background-image: url(./assets/icons/background-mask.png);
+
+     background-color: var(--cor-background); 
+
+     background-repeat: repeat; 
+     background-attachment: fixed;
+     background-size: 600px;
+
+     background-blend-mode: color-burn; 
+}
