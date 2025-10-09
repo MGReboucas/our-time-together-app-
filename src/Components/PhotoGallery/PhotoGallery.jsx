@@ -36,7 +36,6 @@ export default function PhotoGallery(){
 
      return (
           <div className="photo-gallery">
-               <h2 className="photo-gallery-title">Nossos Momentos Especiais</h2>
                <div className="photos-grid">
                     <Carousel
                          showArrows={true}
