@@ -5,7 +5,29 @@
      flex-direction: column;
      align-items: center;
      justify-content: center;
-     padding: 2.5em 0em;
+     background-color: var(--cor-background);
+     margin: 1em 2em;
+     padding: 2.5em 2.2em;
+
+     gap: 2em;
+}
+
+.photo-Text{
+     display: flex;
+     flex-direction: column;
+     gap: 1em;
+}
+
+.photo-title{
+     font-family: var(--fonte-secundaria);
+     text-align: justify;
+     font-size: 1.8rem;
+     font-weight: 500;
+}
+
+.photo-subtitle{
+     font-family: var(--fonte-secundaria);
+     font-size: 1rem;
 }
 
 .photos-grid{
@@ -61,21 +83,20 @@
 }
 
 .carousel .control-dots .dot {
-  background: var(--color-secondary); /* Cor dos dots inativos */
+  background: var(--color-secondary);
   box-shadow: none;
   opacity: 0.7;
 }
 
 .carousel .control-dots .dot.selected {
-  background: var(--color-primary); /* Cor do dot ativo */
+  background: var(--color-primary);
   opacity: 1;
 }
 
-/* Estilo para as setas de navegação */
 .carousel .control-arrow {
-  background: rgba(var(--color-text-dark), 0.5); /* Fundo das setas */
-  height: 100%; /* Ocupa a altura total do carrossel */
-  top: 0; /* Alinha no topo */
+  background: rgba(var(--color-text-dark), 0.5);
+  height: 100%;
+  top: 0;
   transition: background-color 0.3s ease;
 }
 
@@ -84,12 +105,34 @@
 }
 
 .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
-    border-top: 8px solid var(--color-background); /* Cor da seta */
-    border-bottom: 8px solid var(--color-background); /* Cor da seta */
+    border-top: 8px solid var(--color-background);
+    border-bottom: 8px solid var(--color-background);
 }
 .carousel .control-next.control-arrow:before {
     border-left: 8px solid var(--color-background);
 }
 .carousel .control-prev.control-arrow:before {
     border-right: 8px solid var(--color-background);
+}
+
+@media screen and (min-width: 768px) {
+     
+     .photo-gallery{
+          flex-direction: row;
+          justify-content: space-around;
+     }
+
+     .photo-Text{
+          gap: 2em;
+          width: 500px;
+     }
+
+     .photo-title{
+          font-size: 2.5rem;
+     }
+
+     .photo-subtitle{
+          font-size: 1.3rem;
+     }
+     
 }
