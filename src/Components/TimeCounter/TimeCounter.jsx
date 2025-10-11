@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./TimeCounter.css";
 
-const START_DATE = new Date(2017, 9, 17, 0, 0, 0).getTime();
+const START_DATE = new Date(2017, 9, 17, 15, 0, 0).getTime();
 
 const calcTimeCounterDifference = (targetDate) => {
   //convert time to miliseconds
