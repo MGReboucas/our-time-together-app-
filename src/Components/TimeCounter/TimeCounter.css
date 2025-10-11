@@ -1,0 +1,98 @@
+@import url(../../App.css);
+
+.time-counter-everybody{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--cor-background);
+  margin: 1em 2em;
+  padding: 2.5em 2.2em;
+
+  gap: 2em;
+
+  border-radius: 1em;
+}
+
+.time-counter-texts{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  gap: 1em;
+}
+
+.time-counter-title{
+  font-family: var(--fonte-principal);
+  color: var(--cor-text-dark);
+
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.time-counter-subtitle{
+  font-family: var(--fonte-principal);
+
+}
+
+.time-counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.counter-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.time-block {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+  background-color: var(--cor-secundary);
+  border-radius: 15px;
+  min-width: 75px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.time-value {
+  font-size: 3.5em;
+  font-weight: bold;
+  color: var(--cor-text-dark);
+  line-height: 1;
+  font-family: var(--fonte-principal);
+}
+
+.time-unit {
+  font-size: 1em;
+  color: var(--cor-text-dark);
+  text-transform: uppercase;
+  font-family: var(--fonte-principal);
+}
+
+@media screen and (min-width: 768px) {
+  
+  .time-counter-everybody{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .time-counter-texts{
+    gap: 2em;
+    width: 500px;
+  }
+
+  .time-counter-title{
+    font-size: 2.5rem;
+  }
+
+  .time-counter-subtitle{
+    font-size: 1.3rem;
+  }
+}

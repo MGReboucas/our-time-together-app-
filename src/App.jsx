@@ -1,5 +1,6 @@
 import PhotoGallery from './Components/PhotoGallery/PhotoGallery';
 import Header from './Components/Header/Header';
+import TimeCounter from './Components/TimeCounter/TimeCounter';
 import './App.css';
 
 
@@ -9,8 +10,9 @@ function App() {
     <div>
       <Header />
       <PhotoGallery/>
+      <TimeCounter />
     </div>
   )
 }
 
-export default App
+export default App;
