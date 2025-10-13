@@ -4,7 +4,7 @@ import './Header.css'
 
 export default function Header() {
   const names = 'Bia & Matheus'
-  const startDates = '17.10.1017'
+  const startDates = '17.10.2017'
   const Iconheart = Icon
 
   return (
