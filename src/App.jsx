@@ -1,8 +1,9 @@
 import PhotoGallery from './Components/PhotoGallery/PhotoGallery'
 import Header from './Components/Header/Header'
 import TimeCounter from './Components/TimeCounter/TimeCounter'
-import './App.css'
 import WhatsAppButton from './Components/WhatsAppButton/WhatsAppButton'
+import LoveMessage from './Components/LoveMessage/LoveMessage'
+import './App.css'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <PhotoGallery />
       <TimeCounter />
       <WhatsAppButton />
+      <LoveMessage />
     </div>
   )
 }
