@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-     --cor-primary: #D62828;
-     --cor-secundary: #FF88A9;
-     --cor-background: #FFF8F3;
-     --cor-text-dark: #222222;
-     --cor-accent: #F7C2A3;
+  --cor-primary: #d62828;
+  --cor-secundary: #ff88a9;
+  --cor-background: #fff8f3;
+  --cor-text-dark: #222222;
+  --cor-accent: #f7c2a3;
 
-     --fonte-principal: "Roboto", sans-serif;
-     --fonte-secundaria: "Lora", serif;
+  --fonte-principal: 'Roboto', sans-serif;
+  --fonte-secundaria: 'Lora', serif;
 }
 
-body{
-     background-image: url(./assets/icons/background-mask.png);
+body {
+  background-image: url(./assets/icons/background-mask.png);
 
-     background-color: var(--cor-background); 
+  background-color: var(--cor-background);
 
-     background-repeat: repeat; 
-     background-attachment: fixed;
-     background-size: 600px;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 600px;
 
-     background-blend-mode: color-burn; 
+  background-blend-mode: color-burn;
 }

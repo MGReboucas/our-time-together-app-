@@ -1,78 +1,78 @@
 @import url(../../App.css);
 
-.photo-gallery{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     background-color: var(--cor-background);
-     margin: 1em 2em;
-     padding: 2.5em 2.2em;
+.photo-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-background);
+  margin: 1em 2em;
+  padding: 2.5em 2.2em;
 
-     gap: 2em;
+  gap: 2em;
 }
 
-.photo-Text{
-     display: flex;
-     flex-direction: column;
-     gap: 1em;
+.photo-Text {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
-.photo-title{
-     font-family: var(--fonte-secundaria);
-     text-align: justify;
-     font-size: 1.8rem;
-     font-weight: 500;
+.photo-title {
+  font-family: var(--fonte-secundaria);
+  text-align: justify;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
-.photo-subtitle{
-     font-family: var(--fonte-secundaria);
-     font-size: 1rem;
+.photo-subtitle {
+  font-family: var(--fonte-secundaria);
+  font-size: 1rem;
 }
 
-.photos-grid{
-     width: 300px;
-     height: 500px;
-     overflow: hidden;
+.photos-grid {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
 }
 
-.carousel{
-     width: 320px;
-     height: 500px;
-     max-width: 90vw;
-     max-height: 80vh;
-     border-radius: 10px;
-     overflow: hiddem;
-     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+.carousel {
+  width: 320px;
+  height: 500px;
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  overflow: hiddem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-.carousel .slide{
-     height: 100%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     background-color: var(--cor-principal-text);
+.carousel .slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-principal-text);
 }
 
-.carousel-item{
-     height: 100%;
+.carousel-item {
+  height: 100%;
 }
 
-.carousel-image{
-     width: 100%;
-     height: 100%;
+.carousel-image {
+  width: 100%;
+  height: 100%;
 }
 
-.carousel .legend{
-     background: rgba(38, 70, 83, 0.75);
-     color: var(--cor-destaque);
-     padding: 10px;
-     margin: 0;
-     position: absolute;
-     bottom: 0;
-     width: 100%;
-     text-align: center;
-     font-size: 1rem;
+.carousel .legend {
+  background: rgba(38, 70, 83, 0.75);
+  color: var(--cor-destaque);
+  padding: 10px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .carousel .control-dots {
@@ -104,35 +104,34 @@
   background: rgba(var(--color-text-dark), 0.8);
 }
 
-.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
-    border-top: 8px solid var(--color-background);
-    border-bottom: 8px solid var(--color-background);
+.carousel .control-arrow:before,
+.carousel.carousel-slider .control-arrow:before {
+  border-top: 8px solid var(--color-background);
+  border-bottom: 8px solid var(--color-background);
 }
 .carousel .control-next.control-arrow:before {
-    border-left: 8px solid var(--color-background);
+  border-left: 8px solid var(--color-background);
 }
 .carousel .control-prev.control-arrow:before {
-    border-right: 8px solid var(--color-background);
+  border-right: 8px solid var(--color-background);
 }
 
 @media screen and (min-width: 768px) {
-     
-     .photo-gallery{
-          flex-direction: row;
-          justify-content: space-around;
-     }
+  .photo-gallery {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-     .photo-Text{
-          gap: 2em;
-          width: 500px;
-     }
+  .photo-Text {
+    gap: 2em;
+    width: 500px;
+  }
 
-     .photo-title{
-          font-size: 2.5rem;
-     }
+  .photo-title {
+    font-size: 2.5rem;
+  }
 
-     .photo-subtitle{
-          font-size: 1.3rem;
-     }
-     
+  .photo-subtitle {
+    font-size: 1.3rem;
+  }
 }

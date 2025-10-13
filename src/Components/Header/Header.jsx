@@ -1,11 +1,11 @@
-import React from "react";
-import Icon from "../../assets/icons/icon.png";
-import "./Header.css";
+import React from 'react'
+import Icon from '../../assets/icons/icon.png'
+import './Header.css'
 
 export default function Header() {
-  const names = "Bia & Matheus";
-  const startDates = "17.10.1017";
-  const Iconheart = Icon;
+  const names = 'Bia & Matheus'
+  const startDates = '17.10.1017'
+  const Iconheart = Icon
 
   return (
     <>
@@ -23,5 +23,5 @@ export default function Header() {
         </div>
       </header>
     </>
-  );
+  )
 }

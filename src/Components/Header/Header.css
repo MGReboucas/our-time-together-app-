@@ -1,82 +1,80 @@
 @import url(../../App.css);
 
-.header-app{
-     background-color: var(--cor-text-dark);
+.header-app {
+  background-color: var(--cor-text-dark);
 
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 
-     gap: .5em;
-     padding: 2em 1em .5em 1em;
+  gap: 0.5em;
+  padding: 2em 1em 0.5em 1em;
 }
 
-.header-logo-div{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     gap: .8em;
+.header-logo-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
 }
 
-.icon-logo{
-     height: 60px;
-     width: 60px;
+.icon-logo {
+  height: 60px;
+  width: 60px;
 }
 
-.header-title{
-     font-family: var(--fonte-principal);
-     color: var(--cor-primary);
-     font-size: 2.5rem;
-     font-weight: 700;
+.header-title {
+  font-family: var(--fonte-principal);
+  color: var(--cor-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
-.header-subtitle{
-     font-family: var(--fonte-principal);
-     color: var(--cor-primary);
-     font-size: 1.38rem;
-     font-weight: 600;
-     margin-bottom: 1em;
+.header-subtitle {
+  font-family: var(--fonte-principal);
+  color: var(--cor-primary);
+  font-size: 1.38rem;
+  font-weight: 600;
+  margin-bottom: 1em;
 }
 
-.header-message0{
-     font-family: var(--fonte-principal);
-     color: var(--cor-primary);
-     font-size: 3.9rem;
-     font-weight: 600;
+.header-message0 {
+  font-family: var(--fonte-principal);
+  color: var(--cor-primary);
+  font-size: 3.9rem;
+  font-weight: 600;
 }
 
-.header-message1{
-     font-family: var(--fonte-principal);
-     color: var(--cor-primary);
-     font-size: 1.3rem;
-     font-weight: 500;
+.header-message1 {
+  font-family: var(--fonte-principal);
+  color: var(--cor-primary);
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
-
-.header-diviser{
-     width: 100%;
+.header-diviser {
+  width: 100%;
 }
 
-@media screen and (min-width: 768px){
-     .header-app{
-          flex-direction: row;
-          justify-content: space-around;
-          align-items: center;
-          align-items: normal;
-     }
+@media screen and (min-width: 768px) {
+  .header-app {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-items: normal;
+  }
 
-     .header-logo-div{
-          flex-direction: row;
-          align-items: normal;
-     }
+  .header-logo-div {
+    flex-direction: row;
+    align-items: normal;
+  }
 
-     .header-message0{
-          font-size: 3rem;
-     }
+  .header-message0 {
+    font-size: 3rem;
+  }
 
-     .header-message1{
-          font-size: .9rem;
-     }
-
+  .header-message1 {
+    font-size: 0.9rem;
+  }
 }
