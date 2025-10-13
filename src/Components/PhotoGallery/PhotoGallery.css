@@ -8,7 +8,7 @@
   background-color: var(--cor-background);
   margin: 1em 2em;
   padding: 2.5em 2.2em;
-
+  border-radius: 0.5em;
   gap: 2em;
 }
 
