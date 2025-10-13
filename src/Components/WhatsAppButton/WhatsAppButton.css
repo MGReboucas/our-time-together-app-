@@ -1,0 +1,79 @@
+@import url(../../App.css);
+
+.whatsapp-conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor-background);
+  margin: 1em 2em;
+  padding: 2.5em 2.2em;
+  gap: 1em;
+  border-radius: 0.5em;
+}
+
+.whatsapp-texts {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1em;
+}
+
+.whatsapp-title {
+  font-family: var(--fonte-secondaria);
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.whatsapp-subtitle {
+  font-family: var(--fonte-secondaria);
+}
+
+.whatsapp-button-conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.whatsapp-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1.5em;
+  text-align: center;
+  background-color: var(--cor-secundary);
+  border-radius: 0.5em;
+  text-decoration: none;
+}
+
+.whatsapp-logo {
+  width: 30px;
+}
+
+.whatsapp-paragraph {
+  color: var(--cor-text-dark);
+  font-family: var(--fonte-principal);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .whatsapp-conteiner {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .whatsapp-texts {
+    gap: 2em;
+    width: 500px;
+  }
+
+  .whatsapp-title {
+    font-size: 2.5rem;
+  }
+
+  .whatsapp-subtitle {
+    font-size: 1.3rem;
+  }
+}
