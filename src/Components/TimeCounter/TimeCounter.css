@@ -24,15 +24,15 @@
 }
 
 .time-counter-title {
-  font-family: var(--fonte-principal);
+  font-family: var(--fonte-secondaria);
   color: var(--cor-text-dark);
 
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .time-counter-subtitle {
-  font-family: var(--fonte-principal);
+  font-family: var(--fonte-secondaria);
 }
 
 .time-counter-container {
