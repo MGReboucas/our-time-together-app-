@@ -30,8 +30,6 @@
 <h4>A estrutura básica do projeto segue o padrão React:</h4>
 
 .<br/>
-├── node_modules/<br/>
-├── index.html # O arquivo HTML raiz, possivelmente na raiz do projeto (como no Vite)<br/>
 ├── src/<br/>
 │ ├── assets/<br/>
 │ │ └── images/ # Onde as FOTOS do relacionamento são armazenadas <br/>
@@ -43,8 +41,13 @@
 │ ├── App.jsx # Componente principal que junta todas as partes<br/>
 │ ├── main.jsx # Ponto de entrada (onde o React é renderizado no DOM)<br/>
 │ └── reset.css # Estilos globais ou de reset<br/>
+└── .gitignore<br/>
+└── eslint.config.js<br/>
+└── index.html # O arquivo HTML raiz, possivelmente na raiz do projeto (como no Vite)<br/>
+└── package-lock.json<br/>
 └── package.json<br/>
 └── README.md<br/>
+└── vite.config.js<br/>
 
 ### 💖 Dedicatória 💖
 
