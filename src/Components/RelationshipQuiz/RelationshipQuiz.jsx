@@ -59,9 +59,22 @@ const quizQuestion = [
 ]
 
 export default function RelationshipQuiz() {
+  const [isStarted, setisStarted] = useState(false)
+
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
+
+  const handleStart = () => {
+    setisStarted(true)
+  }
+
+  const handleRestart = () => {
+    setisStarted(false)
+    setCurrentQuestion(0)
+    setScore(0)
+    setShowScore(false)
+  }
 
   const handleAnswerClick = isCorrect => {
     if (isCorrect) {
@@ -82,42 +95,56 @@ export default function RelationshipQuiz() {
         <h2 className="quiz-title">Teste seu conhecimento</h2>
         <p className="quiz-subtitle">Me mostre o quanto você sabe!</p>
       </div>
-      <div className="score-conteiner">
-        {showScore ? (
-          <div className="score-selection">
-            Você acertou {score} de {quizQuestion.length} perguntas !
-            <p className="score-message">
-              {score === quizQuestion.length
-                ? 'Parabens! Você me conhece muito bem'
-                : 'Excelente, Nossas memorias são as melhores!'}
-            </p>
-          </div>
-        ) : (
-          <div className="question-section">
-            <div className="question-count">
-              <span>
-                Pergunta {currentQuestion + 1} de {quizQuestion.length}
-              </span>
+      {!isStarted && (
+        <div className="start-screen">
+          <h3 className="start-title">Vocẽ está pronta?</h3>
+          <button className="start-button" onClick={handleStart}>
+            START
+          </button>
+        </div>
+      )}
+
+      {isStarted && (
+        <div className="score-conteiner">
+          {showScore ? (
+            <div className="score-selection">
+              Você acertou {score} de {quizQuestion.length} perguntas !
+              <p className="score-message">
+                {score === quizQuestion.length
+                  ? 'Parabens! Você me conhece muito bem'
+                  : 'Excelente, Nossas memorias são as melhores!'}
+              </p>
+              <button onClick={handleRestart} className="restart-button">
+                RESTART
+              </button>
             </div>
-            <div className="question-text">
-              {quizQuestion[currentQuestion].questionText}
+          ) : (
+            <div className="question-section">
+              <div className="question-count">
+                <span>
+                  Pergunta {currentQuestion + 1} de {quizQuestion.length}
+                </span>
+              </div>
+              <div className="question-text">
+                {quizQuestion[currentQuestion].questionText}
+              </div>
+              <div className="answer-section">
+                {quizQuestion[currentQuestion].answerOptions.map(
+                  (answerOption, index) => (
+                    <button
+                      key={index}
+                      onClick={() => handleAnswerClick(answerOption.isCorrect)}
+                      className="answer-button"
+                    >
+                      {answerOption.answerText}
+                    </button>
+                  ),
+                )}
+              </div>
             </div>
-            <div className="answer-section">
-              {quizQuestion[currentQuestion].answerOptions.map(
-                (answerOption, index) => (
-                  <button
-                    key={index}
-                    onClick={() => handleAnswerClick(answerOption.isCorrect)}
-                    className="answer-button"
-                  >
-                    {answerOption.answerText}
-                  </button>
-                ),
-              )}
-            </div>
-          </div>
-        )}
-      </div>
+          )}
+        </div>
+      )}
     </div>
   )
 }

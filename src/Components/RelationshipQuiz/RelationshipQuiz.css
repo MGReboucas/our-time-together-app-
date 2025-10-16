@@ -35,6 +35,41 @@
   font-family: var(--fonte-secondaria);
 }
 
+.start-screen{
+  display: flex;
+  flex-direction: column;
+
+  padding: 100px 100px;
+  background-color: var(--cor-secundary);
+  border-radius: 12px;
+
+}
+
+.start-title{
+  color: var(--cor-text-dark);
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.start-button, .restart-button{
+  background-color: var(--cor-primary);
+  font-family: var(--fonte-secundary);
+  color: var(--cor-background);
+  border: none;
+  border-radius: 10px;
+  padding: .5em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 20px;
+}
+
+.start-button:hover, .restart-button:hover{
+  background-color: var(--cor-secundary);
+  transform: translateY(-2px);
+}
+
 .score-conteiner{
   background-color: var(--cor-background);
   padding: 40px 30px;
