@@ -1,84 +1,60 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import "./TimeCounter.css";
+import React from 'react'
+import { useState, useEffect } from 'react'
+import './TimeCounter.css'
 
-const START_DATE = new Date(2017, 9, 17, 15, 0, 0).getTime();
+const START_DATE = new Date('October 17, 2017 15:00:00 GMT-0300').getTime()
 
-const calcTimeCounterDifference = (targetDate) => {
-  //convert time to miliseconds
-  const now = new Date().getTime();
-  let difference = now - targetDate;
+const calcTimeCounterDifference = () => {
+  const startDate = START_DATE
+  const timeZoneOffset = -3 * 60
 
-  if (difference < 0) {
-    return {
-      years: 0,
-      months: 0,
-      days: 0,
-      hours: 0,
-      minutes: 0,
-      seconds: 0,
-    };
-  }
+  const now = new Date()
 
-  const startDate = new Date(targetDate);
-  const currentDate = new Date(now);
+  const localNow = new Date(
+    now.getTime() + (now.getTimezoneOffset() + timeZoneOffset) * 60000,
+  )
 
-  //comparing year
-  let years = currentDate.getFullYear() - startDate.getFullYear();
-  
-  //comparing Month
-  let months = currentDate.getMonth() - startDate.getMonth();
+  const differenceInMS = localNow - startDate
 
-  //comparing Days
-  let days = currentDate.getDate() - startDate.getDate();
+  const MS_IN_SECOND = 1000
+  const MS_IN_MINUTE = MS_IN_SECOND * 60
+  const MS_IN_HOUR = MS_IN_MINUTE * 60
+  const MS_IN_DAY = MS_IN_HOUR * 24
+  const MS_IN_YEAR = MS_IN_DAY * 365.25
+  const MS_IN_MONTH = MS_IN_DAY * 30.44
 
-  if (days < 0) {
-    months--;
-    const lastMonth = new Date(
-      currentDate.getFullYear(),
-      currentDate.getMonth(),
-      0
-    );
-    days += lastMonth.getDate();
-  }
-
-  if (months < 0) {
-    years--;
-    months += 12;
-  }
-
-  const msInDay = now % (1000 * 60 * 60 * 24);
-
-  //converting Date with Math.floor
-  const hours = Math.floor(msInDay / (1000 * 60 * 60));
-  const minutes = Math.floor((msInDay % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((msInDay % (1000 * 60)) / 1000);
+  const years = Math.floor(differenceInMS / MS_IN_YEAR)
+  const months = Math.floor((differenceInMS % MS_IN_YEAR) / MS_IN_MONTH)
+  const days = Math.floor((differenceInMS % MS_IN_MONTH) / MS_IN_DAY)
+  const hours = Math.floor((differenceInMS % MS_IN_DAY) / MS_IN_HOUR)
+  const minutes = Math.floor((differenceInMS % MS_IN_HOUR) / MS_IN_MINUTE)
+  const seconds = Math.floor((differenceInMS % MS_IN_MINUTE) / MS_IN_SECOND)
 
   return {
-    years,
-    months,
-    days,
-    hours,
-    minutes,
-    seconds,
-  };
-};
+    years: years,
+    months: months,
+    days: days,
+    hours: hours,
+    minutes: minutes,
+    seconds: seconds,
+  }
+}
 
 export default function TimeCounter() {
   //pic time and set time
-  const [time, setTime] = useState(calcTimeCounterDifference(START_DATE));
+  const [time, setTime] = useState(calcTimeCounterDifference(START_DATE))
 
   //interval to set the time
   useEffect(() => {
     const timer = setInterval(() => {
-      setTime(calcTimeCounterDifference(START_DATE));
-    }, 1000);
+      setTime(calcTimeCounterDifference(START_DATE))
+    }, 1000)
 
-    return () => clearInterval(timer);
-  }, []);
+    return () => clearInterval(timer)
+  }, [])
 
   //format time to string
-  const formatTime = (value) => String(value).padStart(2, "0");
+  const formatTime = value => String(value).padStart(2, '0')
 
   return (
     <div className="time-counter-everybody">
@@ -124,5 +100,5 @@ export default function TimeCounter() {
         </div>
       </div>
     </div>
-  );
+  )
 }
