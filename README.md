@@ -29,7 +29,7 @@
 
 <h4>A estrutura básica do projeto segue o padrão React:</h4>
 
-.<br/>
+```
 ├── src/<br/>
 │ ├── assets/<br/>
 │ │ └── images/ # Onde as FOTOS do relacionamento são armazenadas <br/>
@@ -47,7 +47,8 @@
 └── package-lock.json<br/>
 └── package.json<br/>
 └── README.md<br/>
-└── vite.config.js<br/>
+└── vite.config.js
+```
 
 ### 💖 Dedicatória 💖
 
