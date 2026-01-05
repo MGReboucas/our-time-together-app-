@@ -32,7 +32,7 @@
 ```
 ├── src/
 │ ├── assets/
-│ │ └── images/ # Onde as FOTOS do relacionamento são armazenadas
+│ │ └── images/
 │ ├── Components/
 │ │ ├── TimeCounter/
 │ │ ├── PhotoGallery/
