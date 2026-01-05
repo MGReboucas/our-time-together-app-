@@ -30,23 +30,23 @@
 <h4>A estrutura básica do projeto segue o padrão React:</h4>
 
 ```
-├── src/<br/>
-│ ├── assets/<br/>
-│ │ └── images/ # Onde as FOTOS do relacionamento são armazenadas <br/>
-│ ├── Components/<br/>
-│ │ ├── TimeCounter/<br/>
-│ │ ├── PhotoGallery/<br/>
-│ │ └── LoveMessage/<br/>
-│ ├── App.css # Estilos específicos do componente principal<br/>
-│ ├── App.jsx # Componente principal que junta todas as partes<br/>
-│ ├── main.jsx # Ponto de entrada (onde o React é renderizado no DOM)<br/>
-│ └── reset.css # Estilos globais ou de reset<br/>
-└── .gitignore<br/>
-└── eslint.config.js<br/>
-└── index.html # O arquivo HTML raiz, possivelmente na raiz do projeto (como no Vite)<br/>
-└── package-lock.json<br/>
-└── package.json<br/>
-└── README.md<br/>
+├── src/
+│ ├── assets/
+│ │ └── images/ # Onde as FOTOS do relacionamento são armazenadas
+│ ├── Components/
+│ │ ├── TimeCounter/
+│ │ ├── PhotoGallery/
+│ │ └── LoveMessage/
+│ ├── App.css
+│ ├── App.jsx
+│ ├── main.jsx
+│ └── reset.css
+└── .gitignore
+└── eslint.config.js
+└── index.html
+└── package-lock.json
+└── package.json
+└── README.md
 └── vite.config.js
 ```
 
